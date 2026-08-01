@@ -169,6 +169,14 @@ footer {
 }
 
 /* my_cards Page */
+.container_cards {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
 .card:hover {
     color: var(--text-color);
 }
