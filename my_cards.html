@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jae">
+    <meta name="description" content="Cardperks - View your credit card benefits in one website">
+    <title>CardPerks Main</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+        <header class="header">
+            <a class="menu" onclick="showMenu()" href="#navbar">☰</a>
+            <a class="title" href=".\main.html">CARDPERKS</a>
+            <div class="sign">
+                <a class="signin" href=".\sign_in.html">Sign In</a>
+                <a class="signup" href=".\sign_up.html">Sign Up</a>
+            </div>
+        </header>
+
+        <div id="navbar">
+            <aside class="navbar">
+                <ul>
+                    <li><a class="my_cards" href=".\my_cards.html">My Cards</a></li>
+                    <li><a class="view_cards" href=".\view_cards.html">View Credit Cards</a></li>
+                    <li><a class="offers" href=".\offers.html">Offers</a></li>
+                    <li><a class="help" href=".\help.html">Help</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="container">
+
+            <main class="content">
+                <figure id="card" class="card">
+                    <img src=".\sapphire_preferred_card.png" onclick="showBenefits()">
+                    <figcaption onclick="showBenefits()">Chase Sapphire Preferred Card</figcaption>
+                </figure>
+                <br>
+                <figure id="card" class="card">
+                    <img src=".\freedom_unlimited.png" onclick="showBenefits()">
+                    <figcaption onclick="showBenefits2()">Chase Freedom Unlimited Card</figcaption>
+                </figure>
+            </main>
+
+            <div id="benefits_saph_pref">
+                <div class="benefits_saph_pref">
+                    <h3>Benefits</h3>
+                    <h4>Chase Sapphire Preferred</h4>
+                    <br>
+                    <ul>
+                        <li>2% cash back</li>
+                        <li>5x points on travel</li>
+                        <li>3x points on gas stations and EV charing</li>
+                        <li>3x points on top streaming services</li>
+                        <li>3x points on online grocery</li>
+                        <li>$100 rewards on travel</li>
+                        <li>75,000 points after spending $5000 in the first 3 months</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div id="benefits_free_un">
+                <div class="benefits_free_un">
+                    <h3>Benefits</h3>
+                    <h4>Chase Freedom Unlimited</h4>
+                    <br>
+                    <ul>
+                        <li>1.5% cash back</li>
+                        <li>3% cash back on dining</li>
+                        <li>$200 bonus after spending $500</li>
+                        <li>No annual fee</li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+
+
+    <footer class="footer">
+        <p>&copy; by Jae 2026</p>
+        <p>Email: wogurji@gmail.com</p>
+    </footer>
+</body>
+</html>

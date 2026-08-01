@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+
+:root {
+    --primary-color: #C4D7F2;
+    --secondary-color: #AFDEDC;
+    --accent-color: #EDDD53;
+    --background-light: #F0F7EE;
+    --background-dark: #053BA8;
+    --text-color: #4A6DE1;
+    --text-color2: #053BA8;
+    --white: #fff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anta", sans-serif;
+    /* background-color: var(--secondary-color); */
+}
+
+/* header */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    display: flex;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 20px;
+}
+
+
+.header,
+.inside_container,
+.login,
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.email,
+.password {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px 0px;
+}
+
+.google_login,
+.help,
+.signup,
+.signin {
+    text-decoration: none;
+}
+
+.google_login {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 150%;
+}
+
+.inside_container {
+    flex-direction: column;
+    border: 2px solid var(--background-dark);
+    border-radius: 20px;
+    width: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 14px;
+    }
+
+    article {
+        padding: 15px;
+    }
+}
