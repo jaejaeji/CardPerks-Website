@@ -11,26 +11,25 @@
 </head>
 <body>
         <header class="header">
-            <a class="menu" onclick="showMenu()" href="#navbar">☰</a>
+            <span class="menu" style="cursor:pointer" onclick="openNav()">&#9776;</span>
             <a class="title" href=".\index.html">CARDPERKS</a>
-            <div class="sign">
+            <div class="login">
                 <a class="signin" href=".\sign_in.html">Sign In</a>
                 <a class="signup" href=".\sign_up.html">Sign Up</a>
             </div>
         </header>
 
-        <div id="navbar">
-            <aside class="navbar">
-                <ul>
-                    <li><a class="my_cards" href=".\my_cards.html">My Cards</a></li>
-                    <li><a class="view_cards" href=".\view_cards.html">View Credit Cards</a></li>
-                    <li><a class="offers" href=".\offers.html">Offers</a></li>
-                    <li><a class="help" href=".\help.html">Help</a></li>
-                </ul>
-            </aside>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href=".\my_cards.html">My Cards</a>
+                <a href=".\view_cards.html">View Credit Cards</a>
+                <a href=".\offers.html">Offers</a>
+                <a href=".\help.html">Help</a>
+            </div>
+
         </div>
 
-        <div class="container">
+    <div class="container">
 
         <main class="content">
             <section class="about">
@@ -68,10 +67,8 @@
                 </p>
                 <br>
             </section>
-
                 <img src=".\sapphire_preferred_card.png" width="500"><br>
                 <img src=".\sapphire_preferred_card.png" width="500">
-
         </main>
 
     </div>
