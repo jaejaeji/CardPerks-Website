@@ -72,27 +72,33 @@
 }
 
 .google_login {
-    display: flex;
+    display: grid;
+    margin: 0 auto;
     justify-content: center;
-    border: 2px solid black;
-    border-radius: 2px;
-    width: 100%;
+    width: 50%;
 }
 
+.google_login img {
+    width: 100%;
+}
 
 .login_box {
     width: 90%;
     max-width: 600px;
     margin: 50px auto;
     padding: 30px;
+    font-size: 18px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    border: 3px solid var(--background-dark);
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(136, 124, 206, 0.2);
+    box-shadow: 0 4px 10px rgba(136, 124, 206, 0.5);
+}
+
+h2 {
+    font-size: 30px;
 }
 
 .login_section1 {
@@ -143,5 +149,6 @@
         width: 90%;
         padding: 15px;
         margin: 30px auto;
+        font-size: 15px;
     }
 }
