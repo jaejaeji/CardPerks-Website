@@ -10,14 +10,14 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <header class="header">
-        <span class="menu" style="cursor:pointer" onclick="openNav()">&#9776;</span>
-        <a class="title" href=".\index.html">CARDPERKS</a>
-        <div class="login">
-            <a class="signin" href=".\sign_in.html">Sign In</a>
-            <a class="signup" href=".\sign_up.html">Sign Up</a>
-        </div>
-    </header>
+        <header class="header">
+            <span class="menu" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+            <a class="title" href=".\index.html">CARDPERKS</a>
+            <div class="login">
+                <a class="signin" href=".\sign_in.html">Sign In</a>
+                <a class="signup" href=".\sign_up.html">Sign Up</a>
+            </div>
+        </header>
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -29,63 +29,49 @@
 
         <main class="content">
 
-            <div class="container_cards">
+            <div id="container_cards" class="container_cards">
 
-                <section id="section1">
-                    <figure class="card_img" onclick="showBenefits(1)">
-                        <img src=".\sapphire_preferred_card.png">
-                        <figcaption>Chase Sapphire Preferred Card</figcaption>
-                    </figure>
-                    <br>
-                    <figure class="card_img" onclick="showBenefits(2)">
-                        <img src=".\freedom_unlimited.png">
-                        <figcaption>Chase Freedom Unlimited Card</figcaption>
-                    </figure>
-                </section>
-                
-                <section id="section2">
-                    <figure class="card_img" onclick="showBenefits(1)">
-                        <img src=".\sapphire_preferred_card.png">
-                        <figcaption>Chase Sapphire Preferred Card2</figcaption>
-                    </figure>
-                    <br>
-                    <figure class="card_img" onclick="showBenefits(2)">
-                        <img src=".\freedom_unlimited.png">
-                        <figcaption>Chase Freedom Unlimited Card2</figcaption>
-                    </figure>
-                </section>
+                <figure class="card_img" onclick="showBenefits(1)">
+                    <img src=".\freedom-unlimited-card-w-banner.png">
+                    <figcaption>Chase Freedom Unlimited</figcaption>
+                </figure>
 
-                <section id="section3">
-                    <figure class="card_img" onclick="showBenefits(1)">
-                        <img src=".\sapphire_preferred_card.png">
-                        <figcaption>Chase Sapphire Preferred Card3</figcaption>
-                    </figure>
-                    <br>
-                    <figure class="card_img" onclick="showBenefits(2)">
-                        <img src=".\freedom_unlimited.png">
-                        <figcaption>Chase Freedom Unlimited Card3</figcaption>
-                    </figure>
-                </section>
+                <figure class="card_img" onclick="showBenefits(2)">
+                    <img src=".\sapphire_preferred_card.png">
+                    <figcaption>Chase Sapphire Preferred</figcaption>
+                </figure>
+
+                <figure class="card_img" onclick="showBenefits(3)">
+                    <img src=".\sapphire_reserve.avif">
+                    <figcaption>Chase Reserve</figcaption>
+                </figure>
+
+
+                <figure class="card_img" onclick="showBenefits(4)">
+                    <img src=".\Bilt_Blue.png">
+                    <figcaption>Bilt Blue</figcaption>
+                </figure>
+
+                <figure class="card_img" onclick="showBenefits(5)">
+                    <img src=".\active_cash_card.png">
+                    <figcaption>Wells Fargo Active Cash</figcaption>
+                </figure>
+
+                <figure class="card_img" onclick="showBenefits(6)">
+                    <img src=".\amex_platinum.png">
+                    <figcaption>American Express Platinum</figcaption>
+                </figure>
+
+                <figure class="card_img" onclick="showBenefits(7)">
+                    <img src=".\amx_gold.avif">
+                    <figcaption>American Express Gold</figcaption>
+                </figure>
             </div>
 
-            <div class="details">
-                <div id="card1" class="benefits">
-                    <h3>Benefits</h3>
-                    <h4>Chase Sapphire Preferred</h4>
-                    <br>
-                    <ul>
-                        <li>2% cash back</li>
-                        <li>5x points on travel</li>
-                        <li>3x points on gas stations and EV charing</li>
-                        <li>3x points on top streaming services</li>
-                        <li>3x points on online grocery</li>
-                        <li>$100 rewards on travel</li>
-                        <li>75,000 points after spending $5000 in the first 3 months</li>
-                    </ul>
-                    <a class="deleteCard" href="#">Delete Card</a>
-                </div>
 
-                    <div id="card2" class="benefits">
+            <div class="details">
+
+                    <div id="card1" class="benefits">
                         <h3>Benefits</h3>
                         <h4>Chase Freedom Unlimited</h4>
                         <br>
@@ -95,8 +81,104 @@
                             <li>$200 bonus after spending $500</li>
                             <li>No annual fee</li>
                         </ul>
+                        <a class="addCard" href="#">Add Card</a>
                         <a class="deleteCard" href="#">Delete Card</a>
                     </div>
+
+                    <div id="card2" class="benefits">
+                        <h3>Benefits</h3>
+                        <h4>Chase Sapphire Preferred</h4>
+                        <br>
+                        <ul>
+                            <li>2% cash back</li>
+                            <li>5x points on travel</li>
+                            <li>3x points on gas stations and EV charing</li>
+                            <li>3x points on top streaming services</li>
+                            <li>3x points on online grocery</li>
+                            <li>$100 rewards on travel</li>
+                            <li>75,000 points after spending $5000 in the first 3 months</li>
+                            <li>Annual Fee: $95</li>
+                        </ul>
+                        <a class="addCard" href="#">Add Card</a>
+                        <a class="deleteCard" href="#">Delete Card</a>
+                    </div>
+
+                    <div id="card3" class="benefits">
+                        <h3>Benefits</h3>
+                        <h4>Sapphire Reserve</h4>
+                        <br>
+                        <ul>
+                            <li>Earn 8x points on Chase Travel</li>
+                            <li>Earn 4x points on flights and hotels booked direct</li>
+                            <li>Earn 3x points on dining, including eligible delivery</li>
+                            <li>Earn 1 point per $1 spent on all other purchases</li>
+                            <li>Earn 100,000 bonus points after spending $6000 in the first 3 months</li>
+                            <li>Annual Fee: $795</li>
+                        </ul>
+                        <a class="addCard" href="#">Add Card</a>
+                        <a class="deleteCard" href="#">Delete Card</a>
+                    </div>
+
+                    <div id="card4" class="benefits">
+                        <h3>Benefits</h3>
+                        <h4>Bilt Blue</h4>
+                        <br>
+                        <ul>
+                            <li>4% Bilt cash back</li>
+                            <li>Earn points on rent or mortgage</li>
+                            <li>1 Bilt point per dollar on everydat purchases</li>
+                            <li>Earn $100 in Bilt Cash when you apply and are approved</li>
+                            <li>No annual fee</li>
+                        </ul>
+                        <a class="addCard" href="#">Add Card</a>
+                        <a class="deleteCard" href="#">Delete Card</a>
+                    </div>
+
+                    <div id="card5" class="benefits">
+                        <h3>Benefits</h3>
+                        <h4>Wells Fargo Active Cash</h4>
+                        <br>
+                        <ul>
+                            <li>2% cash back on purchases</li>
+                            <li>0% intro APR for the first 12 months</li>
+                            <li>Earn $200 cash reward bonus when you spend $500 in first 3 months</li>
+                            <li>No annual fee</li>
+                        </ul>
+                        <a class="addCard" href="#">Add Card</a>
+                        <a class="deleteCard" href="#">Delete Card</a>
+                    </div>
+
+                    <div id="card6" class="benefits">
+                        <h3>Benefits</h3>
+                        <h4>American Express Platinum</h4>
+                        <br>
+                        <ul>
+                            <li>5x points on flights</li>
+                            <li>5x points on prepaid hotels</li>
+                            <li>Earn 175,000 reward points after spending $12,000 in the first 6 months</li>
+                            <li>Annual Fee: $895</li>
+                        </ul>
+                        <a class="addCard" href="#">Add Card</a>
+                        <a class="deleteCard" href="#">Delete Card</a>
+                    </div>
+
+                    <div id="card7" class="benefits">
+                        <h3>Benefits</h3>
+                        <h4>American Express Gold</h4>
+                        <br>
+                        <ul>
+                            <li>5x points on hotels</li>
+                            <li>3x points on flights</li>
+                            <li>2x points on car rentals</li>
+                            <li>4x points on restaurants and groceries</li>
+                            <li>Earn 100,000 reward points after spending $8,000 in the first 6 months</li>
+                            <li>Annual Fee: $895</li>
+                        </ul>
+                        <a class="addCard" href="#">Add Card</a>
+                        <a class="deleteCard" href="#">Delete Card</a>
+                    </div>
+
+
                 </div>
             </div>
 
