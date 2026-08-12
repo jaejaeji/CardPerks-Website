@@ -43,7 +43,7 @@ header {
     border: 4px solid white;
     border-radius: 20px;
 
-    z-index: 9999;
+    z-index: 99;
 }
 
 
@@ -121,6 +121,8 @@ header a {
   padding-top: 60px;
 
   text-wrap: nowrap;
+
+  z-index: 9999;
 }
 
 .sidenav a {
