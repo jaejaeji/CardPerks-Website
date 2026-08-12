@@ -97,8 +97,14 @@
     box-shadow: 0 4px 10px rgba(136, 124, 206, 0.5);
 }
 
-h2 {
-    font-size: 30px;
+button {
+    display: inline-block;
+    font-size: 18px;
+    width: 30%;
+    margin: 20px auto;
+    background-color: white;
+    color: var(--background-dark);
+    cursor: pointer;
 }
 
 .login_section1 {
@@ -111,6 +117,7 @@ h2 {
 .login_section1 h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 30px;
 }
 
 .login_section1 label {
@@ -123,7 +130,7 @@ h2 {
 .login_section1 input {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    margin-bottom: 5px;
 
     box-sizing: border-box;
 }
